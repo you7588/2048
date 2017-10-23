@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>2048</title>
+</head>
+<style type="text/css" src="2048.css">
+     body{
+         text-align:center;
+         margin-top: 80px;
+         font-family: arial;
+         background-color: #faf8ef;
+     }
+     h1{
+       font-size: 65px;
+       font-weight: bold;
+     }
+     header p{
+       font-size: 30px;
+     }
+
+header input{
+    margin: -10px auto;
+    width: 100px;
+    padding: 10px 10px;
+    background-color: #bbada0;
+    color: white;
+    border-radius: 10px;
+}
+</style>
+<body>
+  <header>
+    <h1>2048</h1>
+    <input type="button" value="new game" id="button">
+    <p>score: <span id="score"></span></p>
+  </header>
+  <div id="content">
+    <canvas id="drawing">
+                your browser doesn't support canvas!
+    </canvas>
+  </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/chesspieces.js"></script>
+  <script type="text/javascript" src="js/drawing.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+</body>
